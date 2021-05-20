@@ -27,9 +27,6 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
               version: 14
-              
-      - name: Yarn installation
-        run: npm install --global yarn
  
       - name: Installing dependencies
         run: npm ci
