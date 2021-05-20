@@ -31,8 +31,11 @@ jobs:
       - name: Yarn installation
         run: npm install --global yarn
  
-      - name: Creating build
-        run: yarn build 
+      - name: Installing dependencies
+        run: npm ci
+        
+      - name: Building dependencies
+        run: npm run build
              
       - name: Installing Surge
         run: npm install -g surge
